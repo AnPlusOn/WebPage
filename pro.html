@@ -1,0 +1,44 @@
+<!-- <tag attr1="" ... attrN="">text</tag> -->
+<script>
+function updateDateAtElement(elementID){
+    var today = new Date();
+    var date = (today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear();
+    document.getElementById(elementID).innerHTML = date;
+}
+function updateElementContent(elementID, newContent){
+    document.getElementById(elementID).innerHTML = newContent;
+}
+</script>
+<html style="background-color:#C0FFFF;">
+<head>
+</head>
+<body> <!-- add bgcolor attribute -->
+    <hr>
+    <div>			<!-- add centered header with name -->
+        <center><h4>On the Subject Of</h4></center>
+        <center><h1>Anton Ryjov</h1></center>
+        <center><h3>A human, supposedly</h3></center>
+        <!-- add centered image (Vinca.jpg) with width="200cm" and height="120cm" -->
+        <center>				<!--<img src="newborn.jpeg" width="300cm" height="180cm">-->
+            <table style="width:100%">
+                <tr>
+                    <th><a href="pro.html">Home</a></th>
+                    <th><a href="coinTossPro.html">Coin Toss JS</a></th>
+                    <th><a href="days1.html">Date Page</a></th>
+                    <th><a href="toJuly4.html">Days Till' Fireworks</a></th>
+                    <th><a href="moneyPro.html">US -> Canadian Moola Converter</a></th>
+                    <th><a href="wherePro.html">Where do I want to go?</a></th>
+                    <th><a href="Node and SQL.docx">Node.js and MySQL.docx</a></th>
+                </tr>
+            </table>
+        </center>
+    </div>		<!-- horizontal line -->
+    <hr>
+    <div><p>
+        Welcome to my website! This was made for my Web Design class at Rutgers University, from which I am graduating (or have graduated) December 2019.
+        <br>Above are the links to the sub-projects. This project isn't made in a formal style; despite being for school, it was made to be more fun less formal, though all required functions are implemented.
+        <br>
+        <br>I am Anton Ryjov, born on a fairly common day to be born on in 1998.
+    </p></div>
+    <hr size="5" color="black">
+</body></html>

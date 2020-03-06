@@ -1,0 +1,89 @@
+<!-- <tag attr1="" ... attrN="">text</tag> -->
+<script>
+function updateDateAtElement(elementID){
+    var today = new Date();
+    var date = (today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear();
+    document.getElementById(elementID).innerHTML = date;
+}
+
+function updateElementContent(elementID, newContent){
+    document.getElementById(elementID).innerHTML = newContent;
+}
+
+function coinFlip() {
+    var arr = ["Heads!", "Tails!"];
+    updateElementContent("ctResult", arr[parseInt(Math.floor(Math.random()*2))]);//Math.floor(Math.Random*2)
+}
+
+function USDtoCAD() {
+  var txt = "";
+  if (document.getElementById("id1").validity.rangeUnderflow) {
+      document.getElementById("CAD").innerHTML = "No negatives please!";
+  } else {
+    document.getElementById("CAD").innerHTML = 1.33*parseInt(document.getElementById("id1").value) ;
+  }
+}
+</script>
+
+
+<html style="background-color:#C0FFFF;">
+
+<head>
+
+</head>
+
+
+<body> <!-- add bgcolor attribute -->
+
+    <hr>
+
+    <div>
+			<!-- add centered header with name -->
+
+        <center><h4>On the Subject Of</h4></center>
+
+        <center><h1>Anton Ryjov</h1></center>
+
+        <center><h3>A human, supposedly</h3></center>
+
+        <!-- add centered image (Vinca.jpg) with width="200cm" and height="120cm" -->
+
+        <center>
+				<!--<img src="newborn.jpeg" width="300cm" height="180cm">-->
+
+                <table style="width:100%">
+
+                    <tr>
+
+                        <th><a href="pro.html">Home</a></th>
+
+                        <th><a href="coinTossPro.html">Coin Toss JS</a></th>
+
+                        <th><a href="days1.html">Date Page</a></th>
+
+                        <th><a href="toJuly4.html">Days Till' Fireworks</a></th>
+
+                        <th><a href="moneyPro.html">US -> Canadian Moola Converter</a></th>
+
+                        <th><a href="wherePro.html">Where do I want to go?</a></th>
+
+                        <th><a href="Node and SQL.docx">Node.js and MySQL.docx</a></th>
+                    </tr>
+
+                </table>
+
+        </center>
+    </div>
+    <!-- horizontal line -->
+    <hr>
+    <center><h1>This system doesn't work</h1></center>
+    <center><h2>(and is optional, but I do wish to know what I did wrong. I'm trying to do this in JS, not PHP)</h2></center>
+    <div>
+        <center><h2>USD to CAD</h2></center>
+        <center>US$: <input id="id1" type="number" min="0"></center>
+        <center><button onclick="USDtoCAD()">OK</button></center>
+        <center>CAD: <p id="CAD"></p></center>
+    </div>
+    <hr size="5" color="black">
+</body>
+</html>

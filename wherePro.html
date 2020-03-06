@@ -1,0 +1,89 @@
+<!-- <tag attr1="" ... attrN="">text</tag> -->
+<script>
+function updateDateAtElement(elementID){
+    var today = new Date();
+    var date = (today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear();
+    document.getElementById(elementID).innerHTML = date;
+}
+function updateElementContent(elementID, newContent){
+    document.getElementById(elementID).innerHTML = newContent;
+}
+</script>
+
+
+<html style="background-color:#C0FFFF;">
+<head>
+</head>
+
+<body> <!-- add bgcolor attribute -->
+    <hr>
+    <div>
+        <!-- add centered header with name -->
+        <center><h4>On the Subject Of</h4></center>
+        <center><h1>Anton Ryjov</h1></center>
+        <center><h3>A human, supposedly</h3></center>
+        <!-- add centered image (Vinca.jpg) with width="200cm" and height="120cm" -->
+        <center>
+            <!--<img src="newborn.jpeg" width="300cm" height="180cm">-->
+            <table style="width:100%">
+
+                <tr>
+
+                    <th><a href="pro.html">Home</a></th>
+
+                    <th><a href="coinTossPro.html">Coin Toss JS</a></th>
+
+                    <th><a href="days1.html">Date Page</a></th>
+
+                    <th><a href="toJuly4.html">Days Till' Fireworks</a></th>
+
+                    <th><a href="moneyPro.html">US -> Canadian Moola Converter</a></th>
+
+                    <th><a href="wherePro.html">Where do I want to go?</a></th>
+
+                    <th><a href="Node and SQL.docx">Node.js and MySQL.docx</a></th>
+                </tr>
+
+            </table>
+        </center>
+    </div>
+    <!-- horizontal line -->
+    <hr>
+    <div>
+        <i>To Kokomo, of course!</i>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tIieHL8LerI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <br>
+    <div>
+        <h3>Turks and Caicos Islands</h3>
+        <img src="TurksAndCaicosMap.gif" width="300cm" height="180cm">
+        <ul>
+            <li>British Overseas Territory</li>
+            <li>A series of 40 small Carribean islands</li>
+            <li>SE of the Bahamas</li>
+        </ul>
+    </div>
+    <br>
+    <div>
+        <h3>Russia</h3>
+        <!--<img src="TurksAndCaicosMap.gif" width="300cm" height="180cm">-->
+        <ul>
+            <li>The Motherland</li>
+            <li>Can't go there for a while cause that'll put me in the military</li>
+            <li>NNS of the Bahamas, going right over the pole</li>
+        </ul>
+    </div>
+    <br>
+    <div>
+        <h3>Japan</h3>
+        <!--<img src="TurksAndCaicosMap.gif" width="300cm" height="180cm">-->
+        <ul>
+            <li>A bunch of islands that are perhaps best known as the birthplace on anime and similar arts</li>
+            <li>I'm not into anime but it's also a country of unique culture and beauty</li>
+            <li>NW of the Bahamas</li>
+        </ul>
+    </div>
+    <hr size="5" color="black">
+</body>
+</html>
